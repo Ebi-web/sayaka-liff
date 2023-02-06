@@ -36,3 +36,17 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+## Preparation
+
+1. Run `ngrok http 3000` and set the returned HTTPS URL to the endpoint URL of Sayaka-liff's LINE channel
+2. Run `yarn dev` and access localhost:3000
+
+## How to obtain the ID and access tokens needed for the back-end.
+
+1. access `localhost:3000`. Do not access the liff object on the source code yet.
+2. call the necessary liff methods such as liff.getIDToken() in the browser's developer console
+3. if called correctly, a value will be returned
+
+Note that ID tokens expire after an hour or so.
