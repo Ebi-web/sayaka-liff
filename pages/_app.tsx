@@ -20,7 +20,7 @@ function MyApp({Component, pageProps}: AppProps) {
             .then((liff) => {
                 console.log("LIFF init...");
                 liff
-                    .init({liffId: liffId, withLoginOnExternalBrowser: true})
+                    .init({liffId: liffId})
                     .then(() => {
                         console.log("LIFF init succeeded.");
                         setLiffObject(liff);
