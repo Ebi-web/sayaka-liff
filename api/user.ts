@@ -1,8 +1,7 @@
 import axios from "axios";
-import {API_ENDPOINT} from "./api";
 
 const path = '/users';
-const endpoint = API_ENDPOINT + path;
+const endpoint = process.env.API_ENDPOINT + path;
 
 type RegisterRequest = {
     access_token: string

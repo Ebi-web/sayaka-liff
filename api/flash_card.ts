@@ -1,9 +1,8 @@
 import axios from "axios";
-import {API_ENDPOINT} from "./api";
 import type {Liff} from "@line/liff";
 
 const path = '/flash-cards';
-const endpoint = API_ENDPOINT + path;
+const endpoint = process.env.API_ENDPOINT + path;
 
 type CreateRequest = {
     front: string,
