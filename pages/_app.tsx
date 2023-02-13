@@ -23,12 +23,6 @@ function MyApp({Component, pageProps}: AppProps) {
                     .init({liffId: liffId})
                     .then(() => {
                         console.log("LIFF init succeeded.");
-                        if (liff.isInClient()) {
-                            liff.openWindow({
-                                url: "https://liff.line.me/1657852059-xjNVM5rk",
-                                external: true,
-                            });
-                        }
                         setLiffObject(liff);
                         if (!liff.isLoggedIn()) {
                             liff.login();
