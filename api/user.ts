@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const path = '/users';
-const endpoint = process.env.API_ENDPOINT + path;
+const endpoint = process.env.NEXT_PUBLIC_API_ENDPOINT + path;
 
 type RegisterRequest = {
     access_token: string
