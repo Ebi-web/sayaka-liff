@@ -23,7 +23,7 @@ function MyApp({Component, pageProps}: AppProps) {
                     .init({liffId: liffId})
                     .then(() => {
                         console.log("LIFF init succeeded.");
-                        if (navigator.userAgent.indexOf("Chrome") === -1 && navigator.userAgent.indexOf("Firefox") === -1 && navigator.userAgent.indexOf("Safari") === -1 && navigator.userAgent.indexOf("Edge") === -1) {
+                        if (liff.isInClient()) {
                             liff.openWindow({
                                 url: "https://liff.line.me/1657852059-xjNVM5rk",
                                 external: true,
