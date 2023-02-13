@@ -73,13 +73,6 @@ const Home: NextPage<{ liff: Liff | null; liffError: string | null }> = ({
             </Head>
 
             <main className={styles.main}>
-                {/*show user's profile*/}
-                {liff && liff.isLoggedIn() && (
-                    <div>
-                        <img src={liff.getDecodedIDToken()!.picture} alt="profile"/>
-                        <p>{liff.getDecodedIDToken()!.name}</p>
-                    </div>
-                )}
                 <h1>Sayaka</h1>
                 <p>あなたの単語帳</p>
                 <p>Sayakaと話して学んだ単語や表現を記録しておきましょう</p>
